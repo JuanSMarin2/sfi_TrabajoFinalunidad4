@@ -2,22 +2,31 @@ using UnityEngine;
 using System.IO.Ports;
 using TMPro;
 
+enum TaskState
+{
+    INIT,
+    WAIT_COMMANDS
+}
+
+
 public class Serial : MonoBehaviour
 {
-    private SerialPort _serialPort = new SerialPort();
-    private byte[] buffer = new byte[32];
-
+    private static TaskState taskState = TaskState.INIT;
+    private SerialPort _serialPort;
+    private byte[] buffer;
     public TextMeshProUGUI myText;
-
-    private static int counter = 0;
+    private int counter = 0;
 
     void Start()
     {
-        _serialPort.PortName = "COM4";
+        _serialPort = new SerialPort();
+        _serialPort.PortName = "COM5";
         _serialPort.BaudRate = 115200;
         _serialPort.DtrEnable = true;
+        _serialPort.NewLine = "\n";
         _serialPort.Open();
         Debug.Log("Open Serial Port");
+        buffer = new byte[128];
     }
 
     void Update()
@@ -25,16 +34,37 @@ public class Serial : MonoBehaviour
         myText.text = counter.ToString();
         counter++;
 
-        if (Input.GetKeyDown(KeyCode.A))
+        switch (taskState)
         {
-            byte[] data = { 0x31 };// or byte[] data = {'1'};
-            _serialPort.Write(data, 0, 1);
-        }
-        if (_serialPort.BytesToRead > 0)
-        {
-            int numData = _serialPort.Read(buffer, 0, 20);
-            Debug.Log(System.Text.Encoding.ASCII.GetString(buffer));
-            Debug.Log("Bytes received: " + numData.ToString());
+            case TaskState.INIT:
+                taskState = TaskState.WAIT_COMMANDS;
+                Debug.Log("WAIT COMMANDS");
+                break;
+            case TaskState.WAIT_COMMANDS:
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    _serialPort.Write("ledON\n");
+                    Debug.Log("Send ledON");
+                }
+                if (Input.GetKeyDown(KeyCode.S))
+                {
+                    _serialPort.Write("ledOFF\n");
+                    Debug.Log("Send ledOFF");
+                }
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    _serialPort.Write("readBUTTONS\n");
+                    Debug.Log("Send readBUTTONS");
+                }
+                if (_serialPort.BytesToRead > 0)
+                {
+                    string response = _serialPort.ReadLine();
+                    Debug.Log(response);
+                }
+                break;
+            default:
+                Debug.Log("State Error");
+                break;
         }
     }
 }
