@@ -2,11 +2,7 @@ using UnityEngine;
 using System.IO.Ports;
 using TMPro;
 
-enum TaskState
-{
-    INIT,
-    WAIT_COMMANDS
-}
+
 
 
 public class Serial : MonoBehaviour

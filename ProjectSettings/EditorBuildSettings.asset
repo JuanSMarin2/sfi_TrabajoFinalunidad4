@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Configuraci\xF3n.unity"
+    guid: 8f7ed51b5ffd17b468572eca45f608cd
+  - enabled: 1
+    path: Assets/Scenes/Preguntas.unity
+    guid: 4475ef04469730f4a82fbecd891a6c61
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
