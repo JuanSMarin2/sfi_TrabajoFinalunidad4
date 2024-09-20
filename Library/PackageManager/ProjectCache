@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/ASUS/sfi_trabajoFinalUnidad2/Packages/manifest.json
+    m_FilePath: C:/Users/B09S116est/Documents/sfi_trabajoFinalUnidad2/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638623638133230836
+      ticks: 638624345431273207
     m_Hash: 650904477
   m_LockFileStatus:
-    m_FilePath: C:/Users/ASUS/sfi_trabajoFinalUnidad2/Packages/packages-lock.json
+    m_FilePath: C:/Users/B09S116est/Documents/sfi_trabajoFinalUnidad2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638623638133230836
-    m_Hash: 469258992
+      ticks: 638624346483499700
+    m_Hash: 2719016299
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/ASUS/sfi_trabajoFinalUnidad2/Packages
-m_EditorVersion: 2023.1.18f1 (2b639e48c919)
+m_ProjectPath: C:/Users/B09S116est/Documents/sfi_trabajoFinalUnidad2/Packages
+m_EditorVersion: 2022.3.20f1 (61c2feb0970d)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.4.4
   testable: 0
   isDirectDependency: 1
   version: 2.4.4
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.collab-proxy@2.4.4
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.collab-proxy@2.4.4
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -117,11 +117,13 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     compatible:
     - 2.2.0
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     recommended: 2.2.0
     deprecated: []
   dependencies: []
@@ -150,8 +152,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638573492230000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.4/manual/index.html
@@ -169,19 +169,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed the Unity Editor stuck on \"Creating
-    workspace\" when \"Use Unity Version Control\" was selected from the Hub"}'
-  assetStore:
-    productId: 
-- packageId: com.unity.feature.development@1.0.2
+- packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
-  version: 1.0.2
+  version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.feature.development@1.0.2
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.feature.development@1.0.1
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -199,15 +192,17 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 1.0.2
+    - 1.0.1
     compatible:
-    - 1.0.2
-    recommended: 1.0.2
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies:
   - name: com.unity.ide.visualstudio
     version: default
   - name: com.unity.ide.rider
+    version: default
+  - name: com.unity.ide.vscode
     version: default
   - name: com.unity.editorcoroutines
     version: default
@@ -219,23 +214,25 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.21
+    version: 2.0.22
   - name: com.unity.test-framework
-    version: 1.3.9
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.25
+    version: 3.0.27
+  - name: com.unity.ide.vscode
+    version: 1.2.5
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
     version: 1.2.2
   - name: com.unity.testtools.codecoverage
-    version: 1.2.4
+    version: 1.2.5
   - name: com.unity.settings-manager
     version: 2.0.1
   keywords: []
@@ -248,8 +245,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -260,25 +255,19 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 1.0.2
+    version: 1.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/DeveloperToolsFeature.html"}'
-  assetStore:
-    productId: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -451,8 +440,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637547111200000000
   documentationUrl: 
@@ -470,18 +457,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.timeline@1.8.2
   testable: 0
   isDirectDependency: 1
   version: 1.8.2
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.timeline@1.8.2
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.timeline@1.8.2
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -584,27 +565,30 @@ m_ResolvedPackages:
     - 1.8.6
     - 1.8.7
     compatible:
+    - 1.7.6
+    - 1.8.0
+    - 1.8.1
     - 1.8.2
     - 1.8.3
     - 1.8.4
     - 1.8.5
     - 1.8.6
     - 1.8.7
-    recommended: 1.8.7
+    recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -625,8 +609,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638143790900000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
@@ -637,27 +619,19 @@ m_ResolvedPackages:
     revision: a60d9f471eee76056ecbc8c94f5bec263478a9c0
     path: 
   unityLifecycle:
-    version: 1.8.2
+    version: 1.7.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed issue where previewing the Timeline
-    would create prefab property modifications\n- Fixed issue where `ClipEditor.OnClipChanged`
-    was not invoked when changing the object assigned to a `ExposedReference<UnityEngine.Object>`."}'
-  assetStore:
-    productId: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -707,8 +681,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -726,18 +698,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.visualscripting@1.9.1
   testable: 0
   isDirectDependency: 1
   version: 1.9.1
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.visualscripting@1.9.1
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.visualscripting@1.9.1
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -785,12 +751,10 @@ m_ResolvedPackages:
     - 1.9.2
     - 1.9.4
     compatible:
-    - 1.8.0
-    - 1.9.0
     - 1.9.1
     - 1.9.2
     - 1.9.4
-    recommended: 1.8.0
+    recommended: 1.9.4
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -817,8 +781,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638284821510000000
   documentationUrl: 
@@ -829,26 +791,19 @@ m_ResolvedPackages:
     revision: 5e78e9c354ed1567dbcea08e2bd9992e4a473cfb
     path: 
   unityLifecycle:
-    version: 1.8.0
+    version: 1.9.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Reverted a breaking change where `LudiqScriptableObject._data`
-    was marked as `private`\n- Reverted a breaking change related to `IGraphEventListener`"}'
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -881,8 +836,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -900,18 +853,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -943,8 +890,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -962,18 +907,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1006,8 +945,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1025,18 +962,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1069,8 +1000,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1088,18 +1017,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1132,8 +1055,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1151,18 +1072,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1199,8 +1114,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1218,18 +1131,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1270,8 +1177,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1289,18 +1194,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1311,7 +1210,8 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The ImageConversion module implements the ImageConversion class which
-    provides helper methods for converting image data. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
+    provides helper methods to convert images from and to PNG, JPEG or EXR formats.
+    Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
   status: 0
   errors: []
   versions:
@@ -1333,8 +1233,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1352,18 +1250,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1396,8 +1288,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1415,18 +1305,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1459,8 +1343,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1478,18 +1360,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1522,8 +1398,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1541,18 +1415,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1585,8 +1453,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1604,18 +1470,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1648,8 +1508,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1667,18 +1525,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1715,8 +1567,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1734,18 +1584,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1778,8 +1622,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1797,18 +1639,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1849,8 +1685,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1868,18 +1702,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1915,8 +1743,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1934,18 +1760,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -1978,8 +1798,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1997,18 +1815,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2053,8 +1865,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2072,18 +1882,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2116,8 +1920,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2135,18 +1937,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2187,8 +1983,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2206,18 +2000,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2250,8 +2038,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2269,18 +2055,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2321,8 +2101,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2340,18 +2118,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2392,8 +2164,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2411,18 +2181,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2463,8 +2227,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2482,18 +2244,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2550,8 +2306,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2569,18 +2323,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2617,8 +2365,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2636,18 +2382,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2692,8 +2432,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2711,18 +2449,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2769,8 +2501,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2788,18 +2518,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2832,8 +2556,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2851,18 +2573,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2907,8 +2623,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2926,18 +2640,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2974,8 +2682,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2993,18 +2699,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-- packageId: com.unity.ide.visualstudio@2.0.21
+- packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 0
-  version: 2.0.21
+  version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ide.visualstudio@2.0.21
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -3046,7 +2746,6 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     compatible:
-    - 2.0.21
     - 2.0.22
     recommended: 2.0.22
     deprecated: []
@@ -3055,9 +2754,9 @@ m_ResolvedPackages:
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.3.9
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3072,44 +2771,29 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638300315250000000
+  datePublishedTicks: 638326061910000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: eb2b500b99f6429d3d9dcb8acbcbd366dfbb42be
+    revision: 700b44077345e97d37d464ff25507638983aed64
     path: 
   unityLifecycle:
-    version: 2.0.21
+    version: 2.0.22
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Only disable the legacy `com.unity.ide.vscode`
-    package going forward.\n- Fix json parsing issues with specific non-UTF code
-    pages.\n\nProject generation:\n\n- Target `netstandard2.1` instead of `netstandard2.0`.\n-
-    Set `defaultSolution` in `settings.json`.\n- Remove `files.exclude` entries for
-    root `csproj` and `sln` files in `settings.json` when needed.\n- Add `vstuc`
-    launch configuration to `launch.json` when needed.\n- Add `visualstudiotoolsforunity.vstuc`
-    entry to `extensions.json` when needed.\n- You can prevent the package from patching
-    those configuration files by creating a `.vscode/.vstupatchdisable` file."}'
-  assetStore:
-    productId: 
-- packageId: com.unity.ide.rider@3.0.25
+- packageId: com.unity.ide.rider@3.0.27
   testable: 0
   isDirectDependency: 0
-  version: 3.0.25
+  version: 3.0.27
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ide.rider@3.0.25
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ide.rider@3.0.27
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3170,8 +2854,6 @@ m_ResolvedPackages:
     - 3.0.28
     - 3.0.31
     compatible:
-    - 3.0.25
-    - 3.0.26
     - 3.0.27
     - 3.0.28
     - 3.0.31
@@ -3182,7 +2864,7 @@ m_ResolvedPackages:
     version: 1.0.6
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   keywords: []
   registry:
     id: main
@@ -3193,38 +2875,97 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638300315270000000
+  datePublishedTicks: 638373878680000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: e103b4771a884e656407e1b7219e5e3c20222552
+    revision: 1d471c19a7f21834ae5b8d0358fd6f9b242c1ee8
     path: 
   unityLifecycle:
-    version: 3.0.25
+    version: 3.0.27
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- unification of functionality to  search JetBrains
-    installations and open solution and file in Rider"}'
-  assetStore:
-    productId: 
+- packageId: com.unity.ide.vscode@1.2.5
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.5
+  source: 1
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  assetPath: Packages/com.unity.ide.vscode
+  name: com.unity.ide.vscode
+  displayName: Visual Studio Code Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Code editor integration for supporting Visual Studio Code as code
+    editor for unity. Adds support for generating csproj files for intellisense purposes,
+    auto discovery of installations, etc.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.2
+    - 1.0.3
+    - 1.0.7
+    - 1.1.0
+    - 1.1.2
+    - 1.1.3
+    - 1.1.4
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    compatible:
+    - 1.2.5
+    recommended: 1.2.5
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637800255360000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+    revision: b0740c80bfc2440527c317109f7c3d9100132722
+    path: 
+  unityLifecycle:
+    version: 1.2.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.editorcoroutines@1.0.0
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3267,8 +3008,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
   documentationUrl: 
@@ -3286,18 +3025,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
 - packageId: com.unity.performance.profile-analyzer@1.2.2
   testable: 0
   isDirectDependency: 0
   version: 1.2.2
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3346,8 +3079,6 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638108624620000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
@@ -3365,19 +3096,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n* Fixed exception thrown when removing
-    marker."}'
-  assetStore:
-    productId: 
-- packageId: com.unity.test-framework@1.3.9
+- packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 0
-  version: 1.3.9
+  version: 1.1.33
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.test-framework@1.3.9
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3386,7 +3110,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: assets
+  type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 0
   errors: []
@@ -3446,6 +3170,15 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
     - 1.3.9
     - 1.4.0
     - 1.4.1
@@ -3457,18 +3190,18 @@ m_ResolvedPackages:
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.3.9
+    recommended: 1.1.33
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3485,43 +3218,29 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638283169810000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.3/manual/index.html
+  datePublishedTicks: 637938212700000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: 5c8a1448cee4d7607be0d60dceb66703b0cfe016
+    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
     path: 
   unityLifecycle:
-    version: 1.3.9
+    version: 1.1.33
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- By using the editor command line new argument `-randomOrderSeed
-    x` you can run the tests in a randomized order, where x is an integer different
-    from 0. If a new test is added in the project the random order passing the same
-    seed will be kept, and the new test will be placed in the random list accordigly.\n-
-    Fix for WebGL platform target to close the browser tab when the run is completed.
-    \n- Added TestFileReferences.json to be generated on build step of the player,
-    so can be consumed later by Test runners to enrich data for run part."}'
-  assetStore:
-    productId: 
-- packageId: com.unity.testtools.codecoverage@1.2.4
+- packageId: com.unity.testtools.codecoverage@1.2.5
   testable: 0
   isDirectDependency: 0
-  version: 1.2.4
+  version: 1.2.5
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3530,7 +3249,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: assets
   description: Use this package to export code coverage data and reports from your
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
@@ -3570,10 +3289,11 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     compatible:
-    - 1.2.4
     - 1.2.5
-    recommended: 1.2.5
+    - 1.2.6
+    recommended: 1.2.6
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -3582,9 +3302,9 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.3.9
+    version: 1.1.33
   - name: com.unity.ext.nunit
-    version: 2.0.3
+    version: 1.0.6
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -3605,42 +3325,29 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638212235100000000
+  datePublishedTicks: 638386640140000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: a7dd0751db55cd55e3b336723fb51433c1de7244
+    revision: afeb9febf6597fcc31c99ca116d6a82b1e97b9f5
     path: 
   unityLifecycle:
-    version: 1.2.4
+    version: 1.2.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixes\n- Fixed failing to gather code coverage
-    for normal methods in generic classes (case [COV-27](https://issuetracker.unity3d.com/issues/non-generic-methods-in-generic-classes-always-show-no-coverage)).\n-
-    Documentation: Corrected *Settings.json* path in `useProjectSettings` section
-    in *-coverageOptions* (case [COV-26](https://issuetracker.unity3d.com/issues/documentation-for-useprojectsettings-references-incorrect-settings-dot-json-path)).\n-
-    Make sure *Auto Generate Report* defaults to true when running from the command
-    line (case [COV-25](https://issuetracker.unity3d.com/issues/useprojectsettings-does-not-generate-report-until-auto-generate-report-is-toggled-off-and-on-again))."}'
-  assetStore:
-    productId: 
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
   version: 2.0.1
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.settings-manager@2.0.1
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.settings-manager@2.0.1
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -3649,13 +3356,20 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   status: 0
   errors: []
   versions:
     all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
     - 2.0.1
     compatible:
     - 2.0.1
@@ -3673,10 +3387,8 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637744099390000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3692,18 +3404,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-- packageId: com.unity.ext.nunit@2.0.3
+- packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
-  version: 2.0.3
+  version: 1.0.6
   source: 1
-  resolvedPath: C:\Users\ASUS\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ext.nunit@2.0.3
+  resolvedPath: C:\Users\B09S116est\Documents\sfi_trabajoFinalUnidad2\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3713,8 +3419,8 @@ m_ResolvedPackages:
     url: 
   category: Libraries
   type: asset
-  description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
-    version 3.5 and works with all platforms, il2cpp and Mono AOT.
+  description: Custom version of the nunit package build to work with Unity. Used
+    by the Unity Test Framework.
   status: 0
   errors: []
   versions:
@@ -3730,10 +3436,12 @@ m_ResolvedPackages:
     - 2.0.4
     - 2.0.5
     compatible:
+    - 1.0.6
+    - 2.0.2
     - 2.0.3
     - 2.0.4
     - 2.0.5
-    recommended: 2.0.5
+    recommended: 1.0.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -3750,30 +3458,20 @@ m_ResolvedPackages:
     capabilities: 7
     configSource: 0
   hideInEditor: 1
-  entitlements:
-    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637920402200000000
+  datePublishedTicks: 637429759280000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
-    revision: 2e41147762790f2a221103bff840a0138ca01b57
+    revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
     path: 
   unityLifecycle:
-    version: 2.0.3
+    version: 1.0.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- Added unique test ID for repeated tests\r\n- Added
-    ContainKey and ContainValue constaints for dictionaries\r\n- Fixed unexpected
-    null exception when using EmptyConstraint with a null object"}'
-  assetStore:
-    productId: 

@@ -27,7 +27,7 @@ public class config : MonoBehaviour
     void Start()
     {
         _serialPort = new SerialPort();
-        _serialPort.PortName = "COM8";
+        _serialPort.PortName = "COM4";
         _serialPort.BaudRate = 115200;
         _serialPort.DtrEnable = true;
         _serialPort.NewLine = "\n";
