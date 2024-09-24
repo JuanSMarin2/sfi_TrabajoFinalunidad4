@@ -13,6 +13,8 @@ enum TaskState
 
 public class config : MonoBehaviour
 {
+
+    
     private static TaskState taskState = TaskState.INIT;
     private SerialPort _serialPort;
     private byte[] buffer;
@@ -24,10 +26,12 @@ public class config : MonoBehaviour
     private int numTemp = 1;
     private int numInun = 1;
 
+    bool inicio;
+
     void Start()
     {
         _serialPort = new SerialPort();
-        _serialPort.PortName = "COM4";
+        _serialPort.PortName = "COM5";
         _serialPort.BaudRate = 115200;
         _serialPort.DtrEnable = true;
         _serialPort.NewLine = "\n";
@@ -38,14 +42,56 @@ public class config : MonoBehaviour
 
     void Update()
     {
+
+
+
+        if(numInun==-4){
+            numInun=1;
+        }
+            if(numTemp==-4){
+            numTemp=1;
+        }
+     if(numInun==-4){
+            numInun=1;
+        }
+            if(numTemp==-4){
+            numTemp=1;
+        }
+     if(numInun>=4){
+            numInun=1;
+        }
+            if(numTemp>=4){
+            numTemp=1;
+        }
+
+
+        
+
+
+        if(counter != -5){ 
         myText.text = counter.ToString();
+
+        }else{
+            myText.text = "Desactivado".ToString();
+        }
+
+        if(numInun != -5){
         Inunda.text = numInun.ToString();
+        }else{
+            Inunda.text = "Desactivado".ToString(); 
+        }
+        if(numTemp != -5){
         Temper.text = numTemp.ToString();
+        }else{
+             Temper.text = "Desactivado".ToString();
+        }
 
         switch (taskState)
         {
             case TaskState.INIT:
                 taskState = TaskState.WAIT_COMMANDS;
+                 _serialPort.Write("reset\n");
+                    Debug.Log("reset");
                 Debug.Log("WAIT COMMANDS");
                 break;
 
@@ -59,8 +105,8 @@ public class config : MonoBehaviour
                     counter--;
                 }
 
-                // Cuando se presiona la tecla L, envía los datos al microcontrolador
-                if (Input.GetKeyDown(KeyCode.L))
+                // Cuando se presiona la tecla L, envï¿½a los datos al microcontrolador
+                if (inicio == true)
                 {
                     string dataToSend = $"L,{counter},{numInun},{numTemp}\n";
                     _serialPort.Write(dataToSend);
@@ -83,9 +129,35 @@ public class config : MonoBehaviour
         }
     }
 
+    public void aumentar(){
+        if (counter!=-5 && counter < 350){
+
+        counter++;
+
+        } else {
+            
+            counter = 350;
+        }
+    }
+
+    public void disminuir(){
+       if (counter!=-5 && counter > 100){
+
+        counter--;
+
+        } else {
+            counter = 100;
+        }
+    }
+
     public void maximo()
     {
         counter = 350;
+    }
+
+     public void iniciar()
+    {
+        inicio= true;
     }
 
     public void minimo()
@@ -95,25 +167,49 @@ public class config : MonoBehaviour
 
     public void temperatura()
     {
-        if (numTemp < 3)
-        {
+       
+        
             numTemp++;
-        }
-        else
-        {
-            numTemp = 1;
-        }
+        
+
     }
 
     public void inundacion()
     {
-        if (numInun < 3)
-        {
+     
+        
             numInun++;
-        }
-        else
-        {
-            numInun = 1;
-        }
+        
+
     }
+
+    public void desactCounter(){
+
+        counter =-5;
+    }
+
+      public void desactTemp(){
+
+        numTemp =-5;
+    }
+
+      public void desactInun(){
+
+        numInun =-5;
+    }
+
+    void OnDestroy() {
+    if (_serialPort != null && _serialPort.IsOpen) {
+        _serialPort.Close();
+        Debug.Log("Serial port closed in OnDestroy.");
+    }
+}
+
+void OnApplicationQuit() {
+    if (_serialPort != null && _serialPort.IsOpen) {
+        _serialPort.Close();
+        Debug.Log("Serial port closed in OnApplicationQuit.");
+    }
+}
+
 }
