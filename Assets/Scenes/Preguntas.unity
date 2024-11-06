@@ -6029,8 +6029,6 @@ MonoBehaviour:
   preguntaText: {fileID: 1145953625}
   inunda2: {fileID: 865644140}
   inunda1: {fileID: 632578733}
-  temp2: {fileID: 2041957893}
-  temp1: {fileID: 160967387}
   QObjects:
   - {fileID: 1648759668}
   - {fileID: 775084983}

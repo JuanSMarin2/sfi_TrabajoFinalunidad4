@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.IO.Ports;
 using TMPro;
+using System.Threading;
 using UnityEngine.SceneManagement;
 
 public class questionMannager : MonoBehaviour
@@ -11,230 +12,162 @@ public class questionMannager : MonoBehaviour
 
     private SerialPort _serialPort;
     public TextMeshProUGUI counterText; // Para mostrar el contador
-    public TextMeshProUGUI tempText;    // Para mostrar la temperatura
-    public TextMeshProUGUI inunText;    // Para mostrar la inundaci�n
-
-    public TextMeshProUGUI preguntaText;   
+    public TextMeshProUGUI tempText;    // Para mostrar la temperatura real
+    public TextMeshProUGUI inunText;    // Para mostrar la inundación
+    public TextMeshProUGUI preguntaText;
     public GameObject inunda2;
     public GameObject inunda1;
-    public GameObject temp2;
-    public GameObject temp1;
 
- public GameObject[] QObjects = new GameObject[15];
+    public GameObject[] QObjects = new GameObject[15];
 
-    private int counter = 0;
-    private int numTemp = 0;
-    private int numInun = 0;
+    private float counter = 0;
+    private float numInun = 0;
+    private float realTemp = 0.0f;
+    private float actualInun = -1;
+    private int contador = 0;
 
-    private int actualTemp = 0;
-    private int actualInun = 0;
-
-    private int displayInun = 0;
-    private int displayTemp = 0;
-
-    int contador =0;
-
-    bool variablesTransfered = false; //Hace que las variables solo se guarden una vez y no se sobreescriban en cada frame
+    private bool isRunning = true;
+    private bool isInunReceived = false; // Nueva bandera para controlar la recepción de inundación
+    private Thread dataThread;
 
     void Start()
     {
-        // Configuraci�n del puerto serie
-        _serialPort = new SerialPort();
-        _serialPort.PortName = "COM5"; 
-        _serialPort.BaudRate = 115200;
-        _serialPort.DtrEnable = true;
-        _serialPort.NewLine = "\n";
+        // Configuración del puerto serie
+        _serialPort = new SerialPort
+        {
+            PortName = "COM5",
+            BaudRate = 115200,
+            DtrEnable = true,
+            NewLine = "\n"
+        };
         _serialPort.Open();
         Debug.Log("Open Serial Port");
+
+        // Iniciar el hilo para la recepción de datos
+        dataThread = new Thread(ReceiveData);
+        dataThread.Start();
     }
 
     void Update()
     {
+        // Actualizar UI en el hilo principal
+        preguntaText.text = contador.ToString() + "/15";
+        counterText.text = counter == -5 ? "Contador: Desactivado" : "Contador: " + counter.ToString();
+        tempText.text = realTemp == -5 ? "Temperatura: Desactivado" : "Temperatura: " + realTemp.ToString("F2") + "°";
 
-         preguntaText.text = contador.ToString()+"/15";
-
-          if (contador >= 1 && contador <= 15)
+        inunText.text = "Inundación: " + actualInun.ToString() + "%";
+        switch (actualInun)
         {
-            // Desactiva el objeto correspondiente (Q1 = índice 0, Q15 = índice 14)
+            case 1:
+                inunda1.SetActive(true);
+                inunda2.SetActive(false);
+                break;
+            case 2:
+                inunda2.SetActive(true);
+                inunda1.SetActive(false);
+                break;
+            case 3:
+                inunda1.SetActive(false);
+                inunda2.SetActive(false);
+                break;
+            case 0:
+                SceneManager.LoadScene("GameOver");
+                break;
+        }
+
+        if (contador >= 1 && contador <= 15)
+        {
             QObjects[contador - 1].SetActive(false);
         }
-        if(contador >= 15 ){
-               SceneManager.LoadScene("Victoria");
-        }
 
-    
-        // Enviar el comando "update" al Arduino cuando se presione la tecla S
-        if (Input.GetKeyDown(KeyCode.S))
+        if (contador >= 15)
         {
-            _serialPort.Write("update\n"); // Enviar el comando "update" a Arduino
-            Debug.Log("Send update");
-        }
-
-        // Leer datos desde el microcontrolador
-        if (_serialPort.BytesToRead > 0)
-        {
-            string response = _serialPort.ReadLine(); // Leer la l�nea enviada desde Arduino
-            Debug.Log("Received from Arduino: " + response);
-
-            // Si la respuesta contiene los valores de counter, numInun, y numTemp
-            if (response.StartsWith("counter:"))
-            {
-                // Dividir la respuesta por comas
-                string[] values = response.Substring(9).Split(',');
-
-                // Asegurarse de que se recibieron los 3 valores
-                if (values.Length == 3)
-                {
-                    // Extraer los valores de counter, numInun, y numTemp
-                    if (int.TryParse(values[0], out int receivedCounter))
-                    {
-                        counter = receivedCounter;
-                    }
-
-                    if (int.TryParse(values[1].Split(':')[1], out int receivedInun))
-                    {
-                         if(variablesTransfered == false){
-                        numInun = receivedInun;
-                        actualInun = numInun;
-                         }
-                    }
-
-                    if (int.TryParse(values[2].Split(':')[1], out int receivedTemp))
-                    {
-                        if(variablesTransfered == false){
-                        numTemp = receivedTemp;
-                        actualTemp = numTemp;
-
-
-
-                        variablesTransfered = true;
-                        }
-                    }
-
-                    // Actualizar los valores en la UI
-                 // Manejo de 'actualTemp'
-switch(actualTemp)
-{
-    case 1:
-        temp1.SetActive(true);
-        displayTemp = 100;
-        break;
-    case 2:
-        temp2.SetActive(true);
-        displayTemp = 60;
-        break;
-    case 3:
-        displayTemp = 26;
-        break;
-}
-
-// Manejo de 'actualInun'
-switch(actualInun)
-{
-    case 1:
-        inunda1.SetActive(true);
-        inunda2.SetActive(false);
-        displayInun = 90;
-        break;
-    case 2:
-        inunda2.SetActive(true);
-        displayInun = 40;
-        break;
-    case 3:
-        displayInun = 0;
-        break;
-    case 0:
-        SceneManager.LoadScene("GameOver");
-        break;
-}
-
-
-                if(counter == 0){
-                SceneManager.LoadScene("GameOver");
-                }
-
-
-
-// Para el contador
-if (counter == -5)
-{
-    counterText.text = "Contador: Desactivado";
-}
-else
-{
-    counterText.text = "Contador: " + counter.ToString();
-}
-
-// Para la inundación
-if (actualInun == -5)
-{
-    inunText.text = "Inundación: Desactivado";
-}
-else
-{
-    inunText.text = "Inundación: " + displayInun.ToString() + "%";
-}
-
-// Para la temperatura
-if (actualTemp == -5)
-{
-    tempText.text = "Temperatura: Desactivado";
-}
-else
-{
-    tempText.text = "Temperatura: " + displayTemp.ToString() + "°";
-}
-
-
-                }
-            }
+            SceneManager.LoadScene("Victoria");
         }
     }
 
-
- public void OnMistakeButtonClick()
+    void ReceiveData()
     {
+        while (isRunning)
+        {
+            if (_serialPort.BytesToRead > 0)
+            {
+                string response = _serialPort.ReadLine(); // Leer la línea enviada desde Arduino
+                if (!string.IsNullOrEmpty(response))
+                {
+                    string[] values = response.Split(',');
 
-        
-        if(actualTemp > 0)
-        {
-            actualTemp--;
+                    // Procesar los datos si se recibieron los tres valores esperados
+                    if (values.Length == 3)
+                    {
+                        if (float.TryParse(values[0], out float receivedCounter))
+                        {
+                            counter = receivedCounter / 100.0f;
+                        }
+
+                        if (!isInunReceived && float.TryParse(values[1], out float receivedInun))
+                        {
+                            // Solo asignar el valor de inundación la primera vez que se recibe
+                            actualInun = receivedInun > 0 ? receivedInun / 100.0f : actualInun;
+                            numInun = receivedInun;
+                            isInunReceived = true; // Marcar que ya se recibió la primera vez
+                        }
+
+                        if (float.TryParse(values[2], out float receivedTemp))
+                        {
+                            realTemp = receivedTemp / 100.0f;
+                        }
+                    }
+                }
+            }
+            Thread.Sleep(10); // Pequeña pausa para evitar consumo excesivo de CPU
         }
-        if(actualInun > 0)
+    }
+
+    public void OnMistakeButtonClick()
+    {
+        if (actualInun > 0)
         {
-            actualInun--;
+            actualInun -= 0.5f;
         }
-                
+
         audioSource.clip = soundClip1;
         audioSource.Play();
 
- Debug.Log("Mistake " + actualTemp
- + actualInun);
+        Debug.Log("Mistake " + actualInun);
     }
 
-   public void Correcto(){
-         Debug.Log("Good " + contador);
+    public void Correcto()
+    {
+        Debug.Log("Good " + contador);
         contador++;
 
         audioSource.clip = soundClip2;
         audioSource.Play();
     }
 
+    void OnDestroy()
+    {
+        isRunning = false;
+        if (dataThread != null && dataThread.IsAlive)
+        {
+            dataThread.Join();
+        }
 
-
-    void OnDestroy() {
-    if (_serialPort != null && _serialPort.IsOpen) {
-        _serialPort.Close();
-        Debug.Log("Serial port closed in OnDestroy.");
+        if (_serialPort != null && _serialPort.IsOpen)
+        {
+            _serialPort.Close();
+            Debug.Log("Serial port closed in OnDestroy.");
+        }
     }
-}
 
-void OnApplicationQuit() {
-    if (_serialPort != null && _serialPort.IsOpen) {
-        _serialPort.Close();
-        Debug.Log("Serial port closed in OnApplicationQuit.");
+    void OnApplicationQuit()
+    {
+        isRunning = false;
+        if (_serialPort != null && _serialPort.IsOpen)
+        {
+            _serialPort.Close();
+            Debug.Log("Serial port closed in OnApplicationQuit.");
+        }
     }
-}
-
-
 }
